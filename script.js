@@ -14,14 +14,17 @@ function countdown(){
     const days = Math.floor(totalseconds/3600/24);
     const hours = Math.floor(totalseconds/3600) % 24;
     const minutes = Math.floor(totalseconds/60) % 60;
-    const seconds = Math.floor(totalseconds) % 60;
+    const seconds = Math.floor(totalseconds) % 60 + 1;
 
-    daysEL.innerHTML = days;
-    hoursEL.innerHTML = hours;
-    minutesEL.innerHTML = minutes;
-    secondsEL.innerHTML = seconds;
+    daysEL.innerHTML = formatTime(days);
+    hoursEL.innerHTML = formatTime(hours);
+    minutesEL.innerHTML = formatTime(minutes);
+    secondsEL.innerHTML = formatTime(seconds);
 
-    console.log(days);
+}
+
+function formatTime(time) {
+    return time < 10 ? (`0${time}`) : time;
 }
 // initial call
 countdown();
