@@ -21,7 +21,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 5vh;
     color: white;
     margin-top: 5vw;
     align-content: center;
@@ -36,9 +36,9 @@ h1 {
 
 .big-text {
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 4vh;
     line-height: 1;
-    margin: 0 1vw;
+    margin: 0 1vh;
 }
 
 .cd {
@@ -46,5 +46,5 @@ h1 {
 }
 
 .cd span {
-    font-size: 1.5vw;
+    font-size: 1.5vh;
 }
